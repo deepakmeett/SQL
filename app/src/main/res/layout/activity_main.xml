@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    
+    <TextView
+        android:id="@+id/registration"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"
+        android:text="Registration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    <EditText
+        android:id="@+id/emailr"
+        android:hint="Email"
+        android:layout_below="@+id/registration"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/passwordr"
+        android:hint="Password"
+        android:layout_below="@+id/emailr"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_below="@+id/passwordr"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60dp"
+        android:text="Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/loginr"
+        android:layout_below="@+id/passwordr"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/register"
+        android:layout_marginLeft="70dp"
+        android:text="Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />    
+</RelativeLayout>
